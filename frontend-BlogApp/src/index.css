@@ -1,0 +1,133 @@
+:root {
+  --primary: #6366f1;
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --card: #ffffff;
+}
+
+.dark {
+  --bg: #0f172a;
+  --text: #ffffff;
+  --card: #1e293b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: var(--card);
+}
+
+.navbar a {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* Layout */
+.container {
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 20px;
+}
+
+/* Card */
+/* colorful cards */
+.card {
+  background: rgb(63, 137, 157);
+  border-left: 5px solid #46e57e;
+}
+
+/* hover glow */
+.card:hover {
+  border-left: 5px solid #22c55e;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* Button */
+button {
+  background: #4f46e5;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #afc522;
+}
+
+/* Input */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Skeleton */
+.skeleton {
+  height: 200px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,#e6ebe5 25%,#f3f4f6 50%,#e5e7eb 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {background-position:200%}
+  100% {background-position:-200%}
+}
+/* 🔥 Login gradient background */
+.center-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4f46e5, #22c55e);
+}
+
+/* Login box */
+.login-box {
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.login-box h3 {
+  color: #4f46e5;
+}
+
+/* inputs */
+.login-box input {
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+}
+
+/* button */
+.login-box button {
+  background: #4f46e5;
+  width: 100%;
+}
+
+.login-box button:hover {
+  background: #4338ca;
+}
